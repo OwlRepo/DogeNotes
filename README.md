@@ -1,6 +1,6 @@
-# noteify
+# DogeNotes
 
-A new Flutter project.
+A new Flutter note taking app project inspired by DogeHouse of Ben Awad.
 
 ## Getting Started
 
