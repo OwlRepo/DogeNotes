@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:noteify/Constants/NoteifyColors.dart';
+import 'package:noteify/Data/Dynamic/NotesListData.dart';
+import 'package:noteify/Widgets/Home/EmptyListBanner.dart';
 import 'package:noteify/Widgets/Home/GreetingsBottomSheet.dart';
+import 'package:noteify/Widgets/Home/NotesGridListContainer.dart';
 
 class Home extends StatefulWidget {
   static const routeName = '/home';
@@ -61,6 +64,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
+              NotesGridListContainer(),
             ],
           ),
         ),
