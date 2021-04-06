@@ -24,8 +24,15 @@ class MyApp extends StatelessWidget {
         GetPage(name: SplashScreen.routeName, page: () => SplashScreen()),
         GetPage(name: Walkthrough.routeName, page: () => Walkthrough()),
         GetPage(name: AccountSetup.routeName, page: () => AccountSetup()),
-        GetPage(name: Home.routeName, page: () => Home()),
-        GetPage(name: NewNote.routeName, page: () => NewNote()),
+        GetPage(
+          name: Home.routeName,
+          page: () => Home(),
+        ),
+        GetPage(
+          name: NewNote.routeName,
+          page: () => NewNote(),
+          transition: Transition.rightToLeft,
+        ),
         GetPage(name: UpdateNote.routeName, page: () => UpdateNote()),
         GetPage(name: AccountSettings.routeName, page: () => AccountSettings()),
         GetPage(name: AppSettings.routeName, page: () => AppSettings()),

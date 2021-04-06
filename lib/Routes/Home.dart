@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:noteify/Constants/NoteifyColors.dart';
 import 'package:noteify/Data/Dynamic/NotesListData.dart';
+import 'package:noteify/Routes/NewNote.dart';
 import 'package:noteify/Widgets/Home/EmptyListBanner.dart';
 import 'package:noteify/Widgets/Home/GreetingsBottomSheet.dart';
 import 'package:noteify/Widgets/Home/NotesGridListContainer.dart';
@@ -34,7 +35,9 @@ class _HomeState extends State<Home> {
         ),
         backgroundColor: NoteifyColors.lightGrey,
         tooltip: 'Create new note',
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(NewNote.routeName);
+        },
       ),
       floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
